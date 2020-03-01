@@ -6,9 +6,11 @@
     <BlogHeader></BlogHeader>
     <!-- 블로그 메인 content -->
     <BlogMainContent :blogs="blogs"></BlogMainContent>
-    <hr>
+
+
     <!-- 블로그 footer -->
     <BlogFooter></BlogFooter>
+
   </div>
 
 </template>
@@ -21,8 +23,12 @@
   import blogsEn from '~/contents/en/blogsEn.js'
   import blogsEs from '~/contents/es/blogsEs.js'
 
+  const exampleItems = [...Array(150).keys()].map(i => ({ id: (i+1), name: 'Item ' + (i+1) }));
+
 
 export default {
+
+
   async asyncData ({app}) {
 
     const blogs = app.i18n.locale === 'en' ? blogsEn : blogsEs
@@ -44,7 +50,20 @@ export default {
     'BlogNavigation': BlogNavigation,
     'BlogHeader': BlogHeader,
     'BlogMainContent': BlogMainContent,
-    'BlogFooter': BlogFooter},
+    'BlogFooter': BlogFooter
+  },
+  data() {
+    return {
+      exampleItems,
+      pageOfItems: []
+    };
+  },
+  methods: {
+    onChangePage(pageOfItems) {
+      // update page of items
+      this.pageOfItems = pageOfItems;
+    }
+  },
 
   transition: {
     name: 'slide-fade'
