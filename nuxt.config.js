@@ -90,7 +90,11 @@ module.exports = {
   modules: [
     '@nuxtjs/style-resources',
     ['nuxt-i18n', I18N],
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+    '@nuxtjs/sitemap'
+  ],
+  sitemap: [
+
   ],
   styleResources: {
     scss: [
