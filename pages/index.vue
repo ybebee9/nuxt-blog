@@ -1,8 +1,7 @@
 <template>
   <div>
     <client-only>
-    <!-- 블로그 Navigation   -->
-    <BlogNavigation></BlogNavigation>
+
     <!-- 블로그 header -->
     <BlogHeader></BlogHeader>
     <!-- 블로그 메인 content -->
@@ -17,7 +16,7 @@
 </template>
 
 <script>
-  import BlogNavigation from "~/components/BlogNavigation.vue"
+
   import BlogHeader from "~/components/BlogHeader.vue"
   import BlogMainContent from "~/components/BlogMainContent.vue"
   import BlogFooter from "~/components/BlogFooter.vue"
@@ -45,7 +44,7 @@ export default {
   },
 
   components: {
-    'BlogNavigation': BlogNavigation,
+
     'BlogHeader': BlogHeader,
     'BlogMainContent': BlogMainContent,
     'BlogFooter': BlogFooter
