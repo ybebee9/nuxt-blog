@@ -1,5 +1,6 @@
 <template>
   <div>
+    <client-only>
     <!-- 블로그 Navigation   -->
     <BlogNavigation></BlogNavigation>
     <!-- 블로그 header -->
@@ -10,7 +11,7 @@
 
     <!-- 블로그 footer -->
     <BlogFooter></BlogFooter>
-
+    </client-only>
   </div>
 
 </template>
