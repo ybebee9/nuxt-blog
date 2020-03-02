@@ -1,6 +1,6 @@
 ---
 name: 'blog-using-vue-nuxt-markdown'
-title: 정민호 테스트
+title: Nuxt.js 블로그 커스터마이징 작업중-2
 year: 1 January 2019
 color: '#8e7964'
 trans: 'blog-usando-vue-nuxt-markdown'

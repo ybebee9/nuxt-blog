@@ -1,6 +1,6 @@
 ---
 name: 'vuex-what-is-when-use-it'
-title: 메롱메롱
+title: Nuxt.js 블로그 커스터마이징 작업중-4
 year: 23 January 2019
 color: '#edece7'
 isTextColorDark: true

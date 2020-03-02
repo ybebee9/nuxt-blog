@@ -1,7 +1,7 @@
 ---
 name: 'design-and-code-skeletons-screens'
 trans: 'disena-programa-skeletons-screens'
-title: 정민호 똥강아지
+title: Nuxt.js 블로그 커스터마이징 작업중-3
 year: 1 May 2019
 color: '#edece7'
 isTextColorDark: true

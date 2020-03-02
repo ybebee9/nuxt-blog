@@ -10,37 +10,21 @@
                     <a href="#">
                         <span class="fa-stack fa-lg">
                         <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    </li>
-                    <li class="list-inline-item">
-                    <a href="#">
-                        <span class="fa-stack fa-lg">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    </li>
-                    <li class="list-inline-item">
-                    <a href="#">
-                        <span class="fa-stack fa-lg">
-                        <i class="fas fa-circle fa-stack-2x"></i>
                         <i class="fab fa-github fa-stack-1x fa-inverse"></i>
                         </span>
                     </a>
                     </li>
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+                <p class="copyright text-muted">ybebee9@gmail.com</p>
                 </div>
             </div>
             </div>
-        </footer>  
+        </footer>
     </div>
 </template>
 
 <script>
 export default {
-    
+
 }
 </script>

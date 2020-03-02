@@ -23,11 +23,7 @@
   import blogsEn from '~/contents/en/blogsEn.js'
   import blogsEs from '~/contents/es/blogsEs.js'
 
-  const exampleItems = [...Array(150).keys()].map(i => ({ id: (i+1), name: 'Item ' + (i+1) }));
-
-
 export default {
-
 
   async asyncData ({app}) {
 
@@ -52,45 +48,11 @@ export default {
     'BlogMainContent': BlogMainContent,
     'BlogFooter': BlogFooter
   },
-  data() {
-    return {
-      exampleItems,
-      pageOfItems: []
-    };
-  },
-  methods: {
-    onChangePage(pageOfItems) {
-      // update page of items
-      this.pageOfItems = pageOfItems;
-    }
-  },
-
-  transition: {
-    name: 'slide-fade'
-  },
 
   head () {
     return {
-      title: 'YEEUN Devlog',
-      // htmlAttrs: {
-      //   lang: this.$i18n.locale,
-      // },
-      // script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
-      // meta: [
-      //   { name: "author", content: "Marina Aisa" },
-      //   { name: "description", property: "og:description", content: this.$t('indexPageHead.description'), hid: "description" },
-      //   { property: "og:title", content: this.$t('indexPageHead.title') },
-      //   { property: "og:image", content: this.ogImage },
-      //   { name: "twitter:description", content: this.$t('indexPageHead.description') },
-      //   { name: "twitter:image", content: this.ogImage }
-      // ]
+      title: 'YEEUN Devlog'
     };
-  },
-
-  computed: {
-    ogImage: function () {
-      return;
-    }
   }
 }
 </script>

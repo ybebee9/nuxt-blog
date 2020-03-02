@@ -1,5 +1,3 @@
-<style lang="scss" src="./DataGrid.scss"></style>
-
 <template>
   <div class="datagrid">
     <div v-if="checkbox">
