@@ -38,7 +38,7 @@
 
 
   export default {
-
+ 
     async asyncData ({params, app}) {
       const fileContent = await import(`~/contents/blog/${params.slug}.md`)
       const attr = fileContent.attributes

@@ -61,11 +61,7 @@ export default {
             page = Math.floor(listLeng / listSize);
         if (listLeng % listSize > 0) page += 1;
 
-        /*
-        아니면 page = Math.floor((listLeng - 1) / listSize) + 1;
-        이런식으로 if 문 없이 고칠 수도 있다!
-        */
-        return page;
+      return page;
       },
       paginatedData () {
         const start = this.pageNum * this.pageSize,

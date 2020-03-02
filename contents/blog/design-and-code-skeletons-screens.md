@@ -39,7 +39,7 @@ In this case, I as an UX Engineer in this project (work in design and developmen
 
 This is the graphic scheme I needed to know before taking any design tool:
 
-<image-responsive imageURL="blog/design-and-code-skeletons-screens/scheme.jpg" width="100%" alt="Picture of the schematic where the asynchronous and synchronous content is represented"/>
+
 
 The purple rectangles represent the asynchronous content and the green rectangles represent the asynchronous.
 
@@ -50,7 +50,7 @@ And here the complication comes: <strong> I didn't know how many columns of asyn
 To solve this, there are visual resources that we can use, in this case I chose to capture 3 rows with different opacities merging into the final background and 3 columns in each row with random widths.
 In this way the user get the visual feeling that there is an undefined row lenght. And each row has an undefined width for each column.
 
-<image-responsive imageURL="blog/design-and-code-skeletons-screens/design.jpg" width="100%" alt="Final design photo"/>
+
 
 Loaders and the skeleton screens are characteristic for their animations since it makes our brain think that things are happening and something is going on.
 
@@ -150,11 +150,6 @@ The reason is that this animation has to go through different content divs. And 
 
 It's based on some properties that we've seen in <strong>Photoshop or Sketch</strong> applied to CSS. The users of these programs know the layer opacity properties and blending modes. Do you recognize them?
 
-<image-responsive
-    imageURL="blog/design-and-code-skeletons-screens/opacity-properties.png"
-    width="100%"
-    alt="Opacity property picture"
-/>
 
 One of the blending modes is called `overlay`, which makes the dark colors of the layer to which we apply it only to be reflected in other dark colors of layers that are below but not to white layers.
 

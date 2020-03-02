@@ -111,12 +111,6 @@ While writing in Medium **you don't have control over your blog** such as CSS, S
 
 Thanks to Google's tool [Lighthouse](https://developers.google.com/web/fundamentals/performance/audit/) we can analyze and compare Medium with my website.
 
-<image-responsive
-    imageURL="blog/vue-nuxt-blog/performance.jpg"
-    :width="'952'"
-    :height="'509'"
-    alt="performance" />
-
 As you can see, Medium does a lot of things well, but performance is not one of them. This translates into user experience as a very slow load, especially on mobile devices. **Because performance is user experience.** We'll talk more about it another day.
 The interesting thing here is that with Nuxt I managed to reach a **94%** performance compared to 40% offered by Medium in the first load, but the best thing is that since using cache systems, **the second load on my website the performance is 100%** while Medium scores 60%.
 

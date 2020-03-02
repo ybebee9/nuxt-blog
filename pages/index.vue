@@ -25,6 +25,7 @@
 
 export default {
 
+  name: 'Index',
   async asyncData ({app}) {
 
     const blogs = app.i18n.locale === 'en' ? blogsEn : blogsEs

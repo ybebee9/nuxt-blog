@@ -1,6 +1,7 @@
 <script lang="js">
 
   export default {
+    name: "DynamicMarkdown",
     props: ["renderFunc", "staticRenderFuncs", "extraComponent"],
 
     computed: {

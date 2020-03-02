@@ -24,11 +24,12 @@ const productionUrl = {
   en: "/en",
   es: "/es"
 };
-const baseUrl = 'https://marinaaisa.com';
+// const baseUrl = 'https://marinaaisa.com';
 
 module.exports = {
+  devtool: 'source-map',
   env: {
-    baseUrl,
+    // baseUrl,
     productionUrl
   },
   head: {
@@ -90,7 +91,6 @@ module.exports = {
   modules: [
     '@nuxtjs/style-resources',
     ['nuxt-i18n', I18N],
-    'nuxt-webfontloader',
     '@nuxtjs/sitemap'
   ],
   sitemap: [
@@ -103,12 +103,5 @@ module.exports = {
       '@/assets/css/base/_grid.scss',
       '@/assets/css/base/_buttons.scss'
     ],
-  },
-
-  webfontloader: {
-    custom: {
-      families: ['Graphik', 'Tiempos Headline'],
-      urls: ['/fonts/fonts.css']
-    }
   }
 }
