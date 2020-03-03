@@ -44,36 +44,13 @@
         extraComponent: attr.extraComponent,
         renderFunc: `(${fileContent.vue.render})`,
         staticRenderFuncs: `[${fileContent.vue.staticRenderFns}]`
-        // image: {
-        //   main: attr.image && attr.image.main,
-        //   og: attr.image && attr.image.og
-        // }
       }
     },
-
-    // nuxtI18n: {
-    //   seo: false
-    // },
-
     components: { DynamicMarkdown},
 
     head () {
       return {
         title: this.pageTitle
-        // htmlAttrs: {
-        //   lang: this.$i18n.locale,
-        // },
-        // meta: [
-        //   { name: "author", content: "Marina Aisa" },
-        //   { name: "description", property: "og:description", content: this.description, hid: "description" },
-        //   { property: "og:title", content: this.pageTitle },
-        //   { property: "og:image", content: this.ogImage },
-        //   { name: "twitter:description", content: this.description },
-        //   { name: "twitter:image", content: this.ogImage }
-        // ],
-        // link: [
-        //   this.hreflang
-        // ]
       };
     },
 
@@ -82,27 +59,9 @@
     },
 
     computed: {
-      // ogImage () {
-      //   return `${process.env.baseUrl}/images/blog/${this.id}/_thumbnail.jpg`;
-      // },
       pageTitle () {
         return this.title + ' – ybebee9';
       },
-      // showLocales () {
-      //   return this.$i18n.locales.filter(locale => locale.code !== this.$i18n.locale)
-      // },
-      // hreflang () {
-      //   if (!this.trans) {
-      //     return ''
-      //   }
-      //   return {
-      //     hid: 'alternate-hreflang-' + this.showLocales[0].iso,
-      //     rel: 'alternate',
-      //     href: `${process.env.baseUrl + (this.showLocales[0].code === 'en' ? '' : '/es')}/blog/${this.trans}`,
-      //     hreflang: this.showLocales[0].code
-      //   }
-      // },
-
       extraComponentLoader () {
         if (!this.extraComponent) {
           return null
