@@ -23,9 +23,7 @@
 </template>
 
 <script lang="js">
-
   import DynamicMarkdown from "~/components/Markdown/DynamicMarkdown.vue"
-
 
   export default {
 

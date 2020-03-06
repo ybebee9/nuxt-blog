@@ -1,13 +1,10 @@
 <template>
   <div>
     <client-only>
-
     <!-- 블로그 header -->
     <BlogHeader></BlogHeader>
     <!-- 블로그 메인 content -->
     <BlogMainContent :blogs="blogs"></BlogMainContent>
-
-
     <!-- 블로그 footer -->
     <BlogFooter></BlogFooter>
     </client-only>
@@ -44,7 +41,6 @@ export default {
   },
 
   components: {
-
     'BlogHeader': BlogHeader,
     'BlogMainContent': BlogMainContent,
     'BlogFooter': BlogFooter
