@@ -25,6 +25,7 @@ const productionUrl = {
   es: "/es"
 };
 // const baseUrl = 'https://marinaaisa.com';
+  disqus_shortname: process.env.DISQUS_SHORTNAME;
 
 module.exports = {
   devtool: 'source-map',
@@ -103,5 +104,9 @@ module.exports = {
       '@/assets/css/base/_grid.scss',
       '@/assets/css/base/_buttons.scss'
     ],
-  }
+  },
+  plugins: [
+    '~/plugins/disqus'
+  ]
+
 }

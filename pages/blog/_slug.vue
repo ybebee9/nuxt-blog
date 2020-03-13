@@ -1,4 +1,6 @@
 <template>
+  <div>
+  <BlogNavigation></BlogNavigation>
   <div class="blogSelected">
     <div class="intro">
       <div class="elevate-cover">
@@ -17,13 +19,19 @@
           :render-func="renderFunc"
           :static-render-funcs="staticRenderFuncs"
           :extra-component="extraComponent" />
+        <div class="disqus">
+        <vue-disqus shortname="ybebee9"></vue-disqus>
+        </div>
       </client-only>
     </div>
+  </div>
   </div>
 </template>
 
 <script lang="js">
   import DynamicMarkdown from "~/components/Markdown/DynamicMarkdown.vue"
+  import BlogNavigation from "~/components/BlogNavigation.vue"
+
 
   export default {
 
@@ -44,7 +52,7 @@
         staticRenderFuncs: `[${fileContent.vue.staticRenderFns}]`
       }
     },
-    components: { DynamicMarkdown},
+    components: { DynamicMarkdown, BlogNavigation},
 
     head () {
       return {
