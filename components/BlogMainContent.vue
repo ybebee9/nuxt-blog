@@ -6,14 +6,13 @@
         <PostList    v-for="blog in paginatedData"
                      :key="blog.name"
                      :blog="blog"></PostList>
-        <!-- Pager -->
         <div class="btn-cover">
-          <button :disabled="pageNum === 0" @click="prevPage" class="page-btn">
-            이전
+          <button :disabled="pageNum === 0" @click="prevPage">
+            Previous
           </button>
-          <span class="page-count">{{ pageNum + 1 }} / {{ pageCount }} 페이지</span>
-          <button :disabled="pageNum >= pageCount - 1" @click="nextPage" class="page-btn">
-            다음
+          <span class="page-count">{{ pageNum + 1 }} / {{ pageCount }}</span>
+          <button :disabled="pageNum >= pageCount - 1" @click="nextPage" >
+            Next
           </button>
         </div>
       </div>
@@ -47,11 +46,9 @@ export default {
     methods: {
       nextPage () {
         this.pageNum += 1;
-        console.log('nextPage' + this.pageNum);
       },
       prevPage () {
         this.pageNum -= 1;
-        console.log('prevPage' + this.pageNum);
       }
     },
     computed: {
@@ -72,3 +69,62 @@ export default {
 }
 
 </script>
+<style scoped>
+  .btn-cover {
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none
+  }
+  .btn-cover button {
+    display: inline
+  }
+  .btn-cover span {
+    display: inline
+  }
+  .btn-cover button {
+    font-size: 14px;
+    padding: 5px 14px;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    color: #007bff;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .btn-cover span {
+    font-size: 16px;
+    padding: 5px 14px;
+    display: inline-block;
+    border-radius: 15px;
+    color: #555555;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .btn-cover button:focus, .btn-cover button:hover {
+    text-decoration: none;
+    background-color: #eee
+  }
+  .pager {
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none
+  }
+  .pager li {
+    display: inline
+   }
+  .pager li > a, .pager li > span {
+    font-size: 14px;
+    padding: 5px 14px;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    color: #007bff;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+  .pager li > a:focus, .pager li > a:hover {
+    text-decoration: none;
+    background-color: #eee;
+  }
+</style>
