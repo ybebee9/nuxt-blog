@@ -144,6 +144,7 @@ img::-moz-selection {
 @media only screen and (min-width:992px){
 
     #mainNav {
+    background-color: #a28aff;
     transition: background-color .2s;
     transform: translate3d(0,0,0);
     -webkit-backface-visibility: hidden
@@ -153,12 +154,12 @@ img::-moz-selection {
     position: fixed;
     top: -67px;
     transition: transform .2s;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #a28aff;
     background-color:rgba(255,255,255,.9)
     }
 
     #mainNav.is-fixed .navbar-brand {
-    color:#212529
+    color:#fff
     }
 
     #mainNav.is-fixed .navbar-brand:focus,#mainNav.is-fixed .navbar-brand:hover {
@@ -166,7 +167,7 @@ img::-moz-selection {
     }
 
     #mainNav.is-fixed .navbar-nav>li.nav-item>a {
-    color:#212529
+    color:#fff
     }
 
     #mainNav.is-fixed .navbar-nav>li.nav-item>a:focus,#mainNav.is-fixed .navbar-nav>li.nav-item>a:hover {
@@ -174,6 +175,7 @@ img::-moz-selection {
     }
 
     #mainNav.is-visible{
+    background-color: #a28aff;
     transform:translate3d(0,100%,0)
     }
 }
