@@ -176,13 +176,13 @@
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
     padding: 2.4rem;
     border-radius: 4px;
-    background-color: #f6f8fa;
+    background-color: #212529;
     overflow-x: scroll;
     display: block;
     margin-bottom: 5rem;
 
     code {
-      background-color: #f6f8fa;
+      background-color: #212529;
     }
   }
 
