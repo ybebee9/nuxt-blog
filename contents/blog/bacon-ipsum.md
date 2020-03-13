@@ -1,10 +1,10 @@
 ---
-name: 'blog-using-vue-nuxt-markdown'
+name: 'bacon-ipsum'
 title: Nuxt.js 블로그 커스터마이징 작업중-1
 year: 1 January 2019
 color: '#8e7964'
-trans: 'blog-usando-vue-nuxt-markdown'
-id: 'vue-nuxt-blog'
+trans: 'bacon-ipsum'
+id: 'vue-nuxts-blog'
 description: |
   How I created my new website with portfolio and blog in two languages. What technology I used and why.
 ---
