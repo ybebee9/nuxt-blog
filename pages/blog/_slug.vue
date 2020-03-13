@@ -107,7 +107,7 @@
   display: flex;
   flex-direction: column;
   min-height: 325px;
-  padding-top: 100px;
+  padding-top: 135px;
 
 
   &__img, &__textOffset {
