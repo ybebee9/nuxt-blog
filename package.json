@@ -15,7 +15,7 @@
     "@nuxtjs/sitemap": "^2.0.1",
     "@nuxtjs/style-resources": "^1.0.0",
     "jw-vue-pagination": "1.0.3",
-    "markdown-it": "^10.0.0",
+    "markdown-it": "^12.3.2",
     "markdown-it-prism": "^2.0.3",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.0.0",
